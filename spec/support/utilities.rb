@@ -6,7 +6,7 @@ def valid_signin(user)
   click_button "Sign in"
 end
 
-def sign_in(user)
+def valid_signin(user)
   visit signin_path
   fill_in "Email",    with: user.email
   fill_in "Password", with: user.password
